@@ -1,0 +1,198 @@
+*{
+    margin: 0px;
+}
+
+:root{
+    --moradoOscuro : #954FB1;
+    --moradoClaro : #b79ac3;
+    --grisClaro: #E3DFDE;
+}
+
+body{
+    background-color: var(--grisClaro);
+    padding: 25px;
+    
+}
+
+.encabezado{
+    background-color: var(--moradoOscuro);
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+    border-radius: 15px 15px 0 0;
+
+    
+}
+
+.encabezado figure img {
+    width: 50px;
+}
+
+.encabezado h1{
+    color: white;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap:40px;
+    background-color: var(--moradoClaro);
+    padding: 20px;
+}
+
+.charizard-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.title{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.title figure img{
+    width: 50px;
+    height: 50px;
+}
+
+.img-charizard{
+    width: 100%;
+}
+
+.info-pokemon{
+    background-color: white;
+   width: 40%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   padding: 25px;
+   border-radius: 15px;
+}
+
+.papa-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.hijo-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.hijo-title{
+    color: var(--moradoOscuro);
+    font-weight: bold;
+}
+
+footer div{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.otros-pokemones{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.otros-pokemones figure{
+    padding: 20px;
+}
+.otros-pokemones figure img{
+    width: auto;
+    height: 80px;
+    background-color: var(--moradoClaro);
+    border-radius: 10px;
+    padding: 10px;
+
+}
+@media (min-width: 751px) {
+        .each{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+@media (max-width:750px){
+   
+        .otros-pokemones{
+            width: 50%;
+            display: flex;
+            
+            flex-direction: column;
+            
+        }
+        .each{
+            width: 50%; 
+            
+        }
+        .otros-pokemones figure{
+            padding: 20px;
+        }
+       
+}
+
+@media (max-width:550px){
+    .otros{
+        padding: 20px;
+        display: flex;
+        
+        flex-direction: column;
+        
+    }
+    .main-container{
+        display: flex;
+        flex-direction: column;  
+        align-items: center;    
+    }
+    .charizard-container{
+        display: flex;
+        align-items: center;
+    }
+    .img-charizard{
+        padding-top: 30px;
+        width: 120%;
+    }
+    
+    .papa-info{
+       
+        display: flex;
+        flex-direction: column;    
+        
+    }
+    .hijo-info{
+      
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px;
+        
+        
+    }
+    .hijo-title{
+        padding-right: 10px;
+        
+    }
+    .info-pokemon{
+        width: 60%;
+    }
+    
+}
+
+
+
+
+
